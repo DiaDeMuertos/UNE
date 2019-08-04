@@ -1,0 +1,133 @@
+### LINEA 1 MANGA
+GET http://bussonora.in/api/v1/ubicaciones/101?format=json
+Content-Type: application/json
+
+### LINEA 1 SAHUARO
+GET http://bussonora.in/api/v1/ubicaciones/102?format=json
+Content-Type: application/json
+
+### LINEA 2 CARDENAS - CUAUHTEMOC
+GET http://bussonora.in/api/v1/ubicaciones/201?format=json
+Content-Type: application/json
+
+### LINEA 2 PERIFERICO - LOMAS
+GET http://bussonora.in/api/v1/ubicaciones/202?format=json
+Content-Type: application/json
+
+### LINEA 3 MONTEVERDE
+GET http://bussonora.in/api/v1/ubicaciones/301?format=json
+Content-Type: application/json
+
+### LINEA 3 REYES
+GET http://bussonora.in/api/v1/ubicaciones/302?format=json
+Content-Type: application/json
+
+### LINEA 4 CENTRO
+GET http://bussonora.in/api/v1/ubicaciones/401?format=json
+Content-Type: application/json
+
+### LINEA 4 PERIFERICO
+GET http://bussonora.in/api/v1/ubicaciones/402?format=json
+Content-Type: application/json
+
+### LINEA 5
+GET http://bussonora.in/api/v1/ubicaciones/501?format=json
+Content-Type: application/json
+
+### LINEA 6
+GET http://bussonora.in/api/v1/ubicaciones/601?format=json
+Content-Type: application/json
+
+### LINEA 7 DIF NORTE
+GET http://bussonora.in/api/v1/ubicaciones/700?format=json
+Content-Type: application/json
+
+### LINEA 7 DIF SUR
+GET http://bussonora.in/api/v1/ubicaciones/701?format=json
+Content-Type: application/json
+
+### LINEA 8
+GET http://bussonora.in/api/v1/ubicaciones/801?format=json
+Content-Type: application/json
+
+### LINEA 8
+GET http://bussonora.in/api/v1/ubicaciones/801?format=json
+Content-Type: application/json
+
+### LINEA 9
+GET http://bussonora.in/api/v1/ubicaciones/901?format=json
+Content-Type: application/json
+
+### LINEA 9 HACIENDA DEL SUR
+GET http://bussonora.in/api/v1/ubicaciones/902?format=json
+Content-Type: application/json
+
+### LINEA 10 CATUREGLI
+GET http://bussonora.in/api/v1/ubicaciones/1001?format=json
+Content-Type: application/json
+
+### LINEA 10 VH
+GET http://bussonora.in/api/v1/ubicaciones/1002?format=json
+Content-Type: application/json
+
+### LINEA 11
+GET http://bussonora.in/api/v1/ubicaciones/1101?format=json
+Content-Type: application/json
+
+### LINEA 12
+GET http://bussonora.in/api/v1/ubicaciones/1201?format=json
+Content-Type: application/json
+
+### LINEA 13
+GET http://bussonora.in/api/v1/ubicaciones/1301?format=json
+Content-Type: application/json
+
+### LINEA 14 PALO VERDE
+GET http://bussonora.in/api/v1/ubicaciones/1400?format=json
+Content-Type: application/json
+
+### LINEA 15 FUENTES MODELO
+GET http://bussonora.in/api/v1/ubicaciones/1501?format=json
+Content-Type: application/json
+
+### LINEA 15 VILLA BONITA
+GET http://bussonora.in/api/v1/ubicaciones/1502?format=json
+Content-Type: application/json
+
+### LINEA 16 MONTEVERDE
+GET http://bussonora.in/api/v1/ubicaciones/1601?format=json
+Content-Type: application/json
+
+### LINEA 16 REFORMA
+GET http://bussonora.in/api/v1/ubicaciones/1602?format=json
+Content-Type: application/json
+
+### LINEA 17 CHOYAL
+GET http://bussonora.in/api/v1/ubicaciones/1701?format=json
+Content-Type: application/json
+
+### LINEA 17 BACHOCO
+GET http://bussonora.in/api/v1/ubicaciones/1602?format=json
+Content-Type: application/json
+
+### LINEA 17 EXPRESS
+GET http://bussonora.in/api/v1/ubicaciones/1703?format=json
+Content-Type: application/json
+
+### LINEA 18 LADO A SORIANA
+GET http://bussonora.in/api/v1/ubicaciones/1801?format=json
+Content-Type: application/json
+
+### LINEA 18 LADO B SORIANA
+GET http://bussonora.in/api/v1/ubicaciones/1802?format=json
+Content-Type: application/json
+
+### LINEA 19 BACHOCO
+GET http://bussonora.in/api/v1/ubicaciones/1901?format=json
+Content-Type: application/json
+
+### LINEA 19 MENDOZA
+GET http://bussonora.in/api/v1/ubicaciones/1902?format=json
+Content-Type: application/json
+
+
