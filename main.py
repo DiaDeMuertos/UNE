@@ -2,6 +2,7 @@ from time import sleep
 from datetime import datetime
 import sys
 import requests
+from pymongo import MongoClient
 
 
 def is_not_max(x):
@@ -11,7 +12,6 @@ def is_not_max(x):
 if __name__ == "__main__":
     print('LOOP')
 
-    file_error = open('error.txt', 'a+')
     counter = 0
     routes = [
         'http://bussonora.in/api/v1/ubicaciones/101?format=json',
@@ -51,14 +51,20 @@ if __name__ == "__main__":
 
     while is_not_max(counter):
         for route in routes:
+            file_error = open('error.txt', 'a+')
+            client = MongoClient('mongodb://admin:123@localhost:27017')
+            db = client["une"]
+            buses_collection = db["buses"]
+            db.command("serverStatus")
+
             try:
 
                 r = requests.get(route)
                 buses = r.json()['ubicaciones']
                 date_time = datetime.now().strftime('%H:%M:%S')
 
-                # for bus in buses:
-                #     print(bus)
+                for bus in buses:
+                    buses_collection.insert_one(bus)
 
                 print(route, date_time)
             except:
@@ -72,4 +78,5 @@ if __name__ == "__main__":
             finally:
                 counter += 1
                 file_error.close()
+                client.close()
         sleep(10)
