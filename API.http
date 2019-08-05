@@ -50,10 +50,6 @@ Content-Type: application/json
 GET http://bussonora.in/api/v1/ubicaciones/801?format=json
 Content-Type: application/json
 
-### LINEA 8
-GET http://bussonora.in/api/v1/ubicaciones/801?format=json
-Content-Type: application/json
-
 ### LINEA 9
 GET http://bussonora.in/api/v1/ubicaciones/901?format=json
 Content-Type: application/json
@@ -107,7 +103,7 @@ GET http://bussonora.in/api/v1/ubicaciones/1701?format=json
 Content-Type: application/json
 
 ### LINEA 17 BACHOCO
-GET http://bussonora.in/api/v1/ubicaciones/1602?format=json
+GET http://bussonora.in/api/v1/ubicaciones/1702?format=json
 Content-Type: application/json
 
 ### LINEA 17 EXPRESS
