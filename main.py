@@ -64,7 +64,13 @@ if __name__ == "__main__":
                 date_time = datetime.now().strftime('%H:%M:%S')
 
                 for bus in buses:
-                    buses_collection.insert_one(bus)
+                    vehiculo_id = bus['vehiculo_id']
+                    fecha = bus['fecha']
+                    pattern = {'vehiculo_id': vehiculo_id, 'fecha': fecha}
+
+                    r = buses_collection.find_one(pattern)
+                    if r is None:
+                        buses_collection.insert_one(bus)
 
                 print(route, date_time)
             except:
