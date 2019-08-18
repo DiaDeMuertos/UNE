@@ -4,14 +4,17 @@ import sys
 import requests
 from pymongo import MongoClient
 
+MAX_COUNTER = 1
 
-def is_not_max(x):
-    return x != 8640
+
+def is_not_max(value):
+    return value < MAX_COUNTER
 
 
 if __name__ == "__main__":
     print('LOOP')
 
+    forever = True
     counter = 0
     routes = [
         'http://bussonora.in/api/v1/ubicaciones/101?format=json',
@@ -49,7 +52,7 @@ if __name__ == "__main__":
         'http://bussonora.in/api/v1/ubicaciones/1902?format=json',
     ]
 
-    while is_not_max(counter):
+    while is_not_max(counter) or forever is not False:
         for route in routes:
             file_error = open('error.txt', 'a+')
             client = MongoClient('mongodb://admin:123@localhost:27017')
@@ -82,7 +85,8 @@ if __name__ == "__main__":
 
                 file_error.write('%s %s\n' % (date_time, error_info))
             finally:
-                counter += 1
                 file_error.close()
                 client.close()
+        counter += 1
+        print('PAUSE 10 SECONDS')
         sleep(10)
