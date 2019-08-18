@@ -75,7 +75,7 @@ if __name__ == "__main__":
                     if r is None:
                         buses_collection.insert_one(bus)
 
-                print(route, date_time)
+                print(route, len(buses), date_time)
             except:
                 error_info = str(sys.exc_info())
                 date_time = datetime.now().strftime('%Y-%m-%D %H:%M:%S')
