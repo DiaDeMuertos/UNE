@@ -15,6 +15,10 @@ $ docker run -e MONGO_INITDB_ROOT_USERNAME='admin' -e MONGO_INITDB_ROOT_PASSWORD
 ## Python project
 
 ```
+$ python3 -m venv venv
+```
+
+```
 $ source ./venv/bin/activate
 ```
 
@@ -25,3 +29,4 @@ $ pip install -r requirements.txt
 ## Links
 
 - [Mongodb Compass](https://www.mongodb.com/products/compass)
+- [Virtual Environments](https://docs.python.org/3/tutorial/venv.html)
